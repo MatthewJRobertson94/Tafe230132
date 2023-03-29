@@ -9,9 +9,9 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button x:Name="mathsCalculatorButton" Content="Maths Calculator" RenderTransformOrigin="11.678,-6.28" HorizontalAlignment="Center" Margin="0,222,0,0" VerticalAlignment="Top" Click="mathsCalculatorButton_Click" FontSize="36" Width="300" Height="70"/>
-        <Button x:Name="mortgageCalculatorButton" Content="Mortgage Calculator" RenderTransformOrigin="11.678,-6.28" HorizontalAlignment="Center" Margin="0,349,0,0" VerticalAlignment="Top" Width="300" Height="70" FontSize="36" Click="mortgageCalculatorButton_Click"/>
-        <Button x:Name="currencyConverterButton" Content="Currency Converter" RenderTransformOrigin="11.678,-6.28" HorizontalAlignment="Center" Width="300" Height="70" FontSize="36" Click="currencyConverterButton_Click"/>
+        <Button x:Name="mathsCalculatorButton" Content="Maths Calculator" RenderTransformOrigin="11.678,-6.28" HorizontalAlignment="Center" Margin="0,222,0,0" VerticalAlignment="Top" Click="mathsCalculatorButton_Click" FontSize="36" Width="400" Height="70"/>
+        <Button x:Name="mortgageCalculatorButton" Content="Mortgage Calculator" RenderTransformOrigin="11.678,-6.28" HorizontalAlignment="Center" Margin="0,349,0,0" VerticalAlignment="Top" Width="400" Height="70" FontSize="36" Click="mortgageCalculatorButton_Click"/>
+        <Button x:Name="currencyConverterButton" Content="Currency Converter" RenderTransformOrigin="11.678,-6.28" HorizontalAlignment="Center" Width="400" Height="70" FontSize="36" Click="currencyConverterButton_Click"/>
         <Button Content="Exit" RenderTransformOrigin="11.678,-6.28" HorizontalAlignment="Center" Margin="0,597,0,0" VerticalAlignment="Top" FontSize="36" Width="300" Height="70" Click="exitBtn_Click"/>
         <TextBlock x:Name="titleTxtBlk" Text="Universal Calculator" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="50" FontWeight="Bold"/>
         <Image Margin="1117,74,161,727" Source="/abacus.PNG"/>
