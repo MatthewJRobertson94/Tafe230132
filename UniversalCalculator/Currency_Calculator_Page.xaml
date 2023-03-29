@@ -7,8 +7,43 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-    <Grid>
-
-    </Grid>
+	<StackPanel Orientation="Vertical" Margin="20" HorizontalAlignment="Center" VerticalAlignment="Top" Background="Azure">
+		<StackPanel>
+			<TextBlock x:Name="currencyTitleBlock" Text="Currency Conversion Calculator" FontSize="60" FontWeight="Bold"/>
+		</StackPanel>
+		<StackPanel Orientation="Horizontal">
+			<StackPanel Orientation="Vertical" Margin="10">
+				<TextBlock x:Name="amountTextBlock" Text="Amount $" FontSize="40"/>
+				<TextBox x:Name="amountTextBox" Width="350" Height="60" FontSize="30"/>
+			</StackPanel>
+			<StackPanel Orientation="Vertical" Margin="10">
+				<TextBlock x:Name="fromTextBlock" Text="From" FontSize="40"/>
+				<ComboBox x:Name="fromComboBox" Width="350" Height="60" FontSize="30" >
+					<ComboBoxItem x:Name="fromDollar" IsSelected="True" Content="USD - US Dollar"/>
+					<ComboBoxItem x:Name="fromEuro" Content="EUR - Euro"/>
+					<ComboBoxItem x:Name="fromPound" Content="GBP - UK Pound"/>
+					<ComboBoxItem x:Name="fromRupee" Content="INR - India Rupee"/>
+				</ComboBox>
+            </StackPanel>
+			<StackPanel Orientation="Vertical" Margin="10">
+				<TextBlock x:Name="toTextBlock" Text="To" FontSize="40"/>
+				<ComboBox x:Name="toComboBox" Width="350" Height="60" FontSize="30" >
+					<ComboBoxItem x:Name="toDollar" Content="USD - US Dollar"/>
+					<ComboBoxItem x:Name="toEuro" IsSelected="True" Content="EUR - Euro"/>
+					<ComboBoxItem x:Name="toPound" Content="GBP - UK Pound"/>
+					<ComboBoxItem x:Name="toRupee" Content="INR - India Rupee"/>
+				</ComboBox>
+			</StackPanel>
+		</StackPanel>
+		<StackPanel Orientation="Vertical">
+			<TextBlock x:Name="inputDisplayBlock" Text="" FontSize="30"/>
+			<TextBlock x:Name="converterBlock" Text="" FontSize="50" FontWeight="Black" Margin="0, 20, 00, 20"/>
+			<TextBlock x:Name="currencyBlock" Text="" FontSize="30"/>
+			<TextBlock x:Name="reverseBlock" Text="" FontSize="30"/>
+		</StackPanel>
+		<StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+			<Button x:Name="convertButton" Content="Currency Conversion" HorizontalAlignment="Center" FontSize="50" Margin="10" Click="convertButton_Click"/>
+			<Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Center" FontSize="30" Margin="10" Click="exitButton_Click" />
+		</StackPanel>
+	</StackPanel>
 </Page>
