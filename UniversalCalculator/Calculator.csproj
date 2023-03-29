@@ -147,6 +147,7 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\abacus.PNG" />
     <Content Include="images\EUR1.PNG" />
     <Content Include="images\India1.PNG" />
     <Content Include="images\UK1.PNG" />
