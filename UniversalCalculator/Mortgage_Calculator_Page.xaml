@@ -9,6 +9,21 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <TextBlock x:Name="titleTxtBlk" HorizontalAlignment="Stretch" Margin="488,69,0,0" Text="Mortgage Calculator" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="50" Grid.RowSpan="1" Grid.ColumnSpan="1"/>
+        <TextBox x:Name="principalTxtBx" HorizontalAlignment="Left" Height="49" Margin="661,223,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="400"/>
+        <TextBox x:Name="monthlyRepaymentTxtBx" HorizontalAlignment="Left" Height="49" Margin="661,596,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="400"/>
+        <TextBox x:Name="monthlyInterestTxtBx"  HorizontalAlignment="Left" Height="49" Margin="661,524,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="400"/>
+        <TextBox x:Name="yearlyInterestTxtBx" HorizontalAlignment="Left" Height="49" Margin="661,451,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="400"/>
+        <TextBox x:Name="monthsTxtBx" HorizontalAlignment="Left" Height="49" Margin="661,370,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="400"/>
+        <TextBox x:Name="yearsTxtBx" HorizontalAlignment="Left" Height="49" Margin="661,294,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="400"/>
+        <TextBlock x:Name="monthlyPaymentTxtBlk" HorizontalAlignment="Left" Margin="352,601,0,0" Text="Monthly Repayments:" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" RenderTransformOrigin="2.534,-6.675" FontSize="30"/>
+        <TextBlock x:Name="monthlyInterestTxtBlk" HorizontalAlignment="Left" Margin="352,524,0,0" Text="Monthly Interest Rate:" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" RenderTransformOrigin="2.534,-6.675" FontSize="30"/>
+        <TextBlock x:Name="yearlyinterestTxtBlk" HorizontalAlignment="Left" Margin="352,451,0,0" Text="Yearly Interest Rate:" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" RenderTransformOrigin="2.534,-6.675" FontSize="30"/>
+        <TextBlock x:Name="monthsTxtBlk" HorizontalAlignment="Left" Margin="352,370,0,0" Text="and Months:" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" RenderTransformOrigin="2.534,-6.675" FontSize="30"/>
+        <TextBlock x:Name="principalTxtBlk" HorizontalAlignment="Left" Margin="352,223,0,0" Text="Pricipal Borrowed:" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" RenderTransformOrigin="2.534,-6.675" FontSize="30"/>
+        <TextBlock x:Name="yearsTxtBlk" HorizontalAlignment="Left" Margin="352,294,0,0" Text="Years:" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" RenderTransformOrigin="2.534,-6.675" FontSize="30"/>
+        <Button x:Name="calculateBtn" Content="Calculate" RenderTransformOrigin="11.511,7.967" Margin="624,721,0,0" VerticalAlignment="Top" FontSize="40" Click="CalculateBtn_Click"/>
+        <Button x:Name="exitBtn" Content="Exit" Margin="681,833,0,0" VerticalAlignment="Top" FontSize="30" Click="exitBtn_Click"/>
 
     </Grid>
 </Page>

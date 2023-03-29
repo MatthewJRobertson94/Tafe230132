@@ -26,5 +26,42 @@ namespace Calculator
 		{
 			this.InitializeComponent();
 		}
+
+		private int pricipal;
+		private int years;
+		private int months;
+		private double yearlyInterest;
+		private double monthlyInterest;
+		private double monthlyRepayment;
+
+
+		private async void CalculateBtn_Click(object sender, RoutedEventArgs e)
+		{
+			try
+			{
+				pricipal = int.Parse(principalTxtBx.Text);
+				years = int.Parse(yearsTxtBx.Text);
+				months = int.Parse(monthsTxtBx.Text);
+				yearlyInterest = Double.Parse(yearlyInterestTxtBx.Text);
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine("Error in input: " + ex);
+			}
+
+			months = years * 12 + months;
+			monthlyInterest = yearlyInterest / 100 / 12;
+
+			double calculated = pricipal * (monthlyInterest * (Math.Pow(1 + monthlyInterest, Convert.ToDouble(months)))) / (Math.Pow(1 + monthlyInterest, Convert.ToDouble(months)) - 1);
+			monthlyRepayment = calculated;
+
+			monthlyInterestTxtBx.Text = monthlyInterest.ToString("0.0000") + "%";
+			monthlyRepaymentTxtBx.Text = monthlyRepayment.ToString("0000.00");
+		}
+
+		private void exitBtn_Click(object sender, RoutedEventArgs e)
+		{
+			this.Frame.Navigate(typeof(MainPage));
+		}
 	}
 }
