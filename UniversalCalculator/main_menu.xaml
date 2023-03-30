@@ -16,6 +16,7 @@
         <TextBlock x:Name="titleTxtBlk" Text="Universal Calculator" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="50" FontWeight="Bold"/>
         <Image Margin="1117,74,161,727" Source="/abacus.PNG"/>
         <Image HorizontalAlignment="Left" Height="163" Margin="1206,119,0,0" VerticalAlignment="Top" Width="178" Source="/images/abacus.PNG"/>
+        <Button x:Name="TripCalculatorButton" Content="Trip Calculator" Margin="0,119,0,0" VerticalAlignment="Top" Width="400" HorizontalAlignment="Center" Height="70" FontSize="36" Click="TripCalculatorButton_Click"/>
 
     </Grid>
 </Page>
